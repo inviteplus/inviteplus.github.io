@@ -3,9 +3,15 @@
     padding: 0px;
 }
 header {
-    height: 165px;
-    width: 100%;
     border-bottom: 2px gray solid;
+}
+/*.wrapper header {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}*/
+.headercontent {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,8 +24,6 @@ a {
 }
 .logo {
     font-family: Arial;
-    font-size: 25px;
-    margin-left: 25px;
 }
 .menu a {
     padding: 15px;
@@ -27,28 +31,57 @@ a {
     background: aqua;
 }
 .menu a:hover{
-    padding: 20px;
     background: lime;
 }
 span{
-    font-size: 70px;
+    font-weight: bold;
     color: black ;
 }
 img {
+    display: inline;
+    float: left;
     width: 400px;
     margin: 40px ;
     border: 2px gray solid;
-}
-p {
-    margin-left: 40px;
-    font-size: 25px;
-    padding: 15px;
 }
 footer {
     text-align: center;
     color: blue;
 }
-.content span {
-    font-size: 25px;
-    font-weight: bold;
+.info {
+    font-size: 20px;
+    font-family: Arial;
+    padding-right: 20px;
+}
+.info p {
+    display: inline-block;
+    padding: 10px;
+}
+h1 {
+    font-size: 36px;
+}
+.content-left{
+    width: 40%;
+    margin-left: 50px;
+}
+.content-right{
+    width: 40%;
+    margin-right: 50px;
+}
+.contentdata{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+.photo1 {
+    width: 200px;
+}
+.photo2 {
+    width: 150px;
+    float: right;
+}
+.wrapper {
+    padding: 50px;
+    max-width: 1360px;
 }
