@@ -1,0 +1,55 @@
+div {
+    width: 650px;
+    height: 650px;
+}
+.one {
+    background: #ff0000;
+    position: relative;
+}
+.two {
+    background: #54ff00;
+    position: relative;
+    left: 480px;
+    bottom: 590px;
+}
+.three {
+    background: #0030ff;
+    position: relative;
+    bottom: 820px;
+    right: 20px;
+}
+.four {
+    background: #ffe400;
+    position: relative;
+    bottom: 1430px;
+    left: 530px;
+}
+.circle {
+    width: 200px;
+    height: 200px;
+    background: #2c3e50;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 45px;
+    right: 50px;
+}
+span {
+    display: block;
+    width: 160px;
+    height: 10px;
+    background: #000000;
+}
+.first {
+    position: absolute;
+    transform: translateX(20px) translateY(95px) rotate(45deg);
+}
+.second {
+    position: absolute;
+    transform: translateX(20px) translateY(95px) rotate(-45deg);
+}
+.wrapper div:hover {
+    z-index: 5;
+}
+.wrapper {
+    padding: 150px;
+}
