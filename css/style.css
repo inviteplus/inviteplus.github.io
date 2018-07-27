@@ -8,13 +8,18 @@
 .socialbackground {
     background: #0054a4;
     height: 30px;
+    /*width: 100%;*/
 }
 .social {
+    margin-right: 200px;
     height: 30px;
+    width: 100%;
     /*max-width: 1200px;*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.social ul {
     margin-right: 200px;
 }
 ul li {
@@ -86,6 +91,7 @@ a {
     border-radius: 20px;
     background: #f15b4f;
     display: inline-block;
+    color: white;
 }
 .button2 {
     /*margin-left: 18px;*/
@@ -94,32 +100,33 @@ a {
     border-radius: 20px;
     background: #0054a4;
     display: inline-block;
+    color: white;
 }
 .wrapermenu {
     position: relative;
-    width: 1200px;
+    top: -100px;
+    width: 100%;
 }
 .buttonmenu {
     display: flex;
-    width: 1200px;
-    margin: auto 200px;
-    position: absolute;
-    top: -100px;
+    /*width: 100%;
+    /*position: relative;
+    /*margin: 200px;
+    top: -100px;*/
     justify-content: space-between;
     align-items: center;
-
 }
 h1,h4 {
     color: #779ac5;
 }
 h2 {
-    color: white;
+    color: black;
 }
 p,p4 {
     color: #6b6f76;
 }
 p2 {
-    color: white;
+    color: black;
 }
 .buttonblock1 {
     height: 100px;
@@ -127,9 +134,10 @@ p2 {
     border: 1px solid white;
     border-radius: 30px;
     background: #6fbd2a;
-    display: inline-block;
-    padding: 20px 20px;
-    justify-content: inherit;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-left: 200px;
 }
 .buttonblock2 {
     height: 100px;
@@ -137,9 +145,9 @@ p2 {
     border: 1px solid white;
     border-radius: 30px;
     background: #f15b4f;
-    display: inline-block;
-    padding: 20px 20px;
-    justify-content: inherit;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
 }
 .buttonblock3 {
     height: 100px;
@@ -147,9 +155,10 @@ p2 {
     border: 1px solid white;
     border-radius: 30px;
     background: #0054a4;
-    display: inline-block;
-    padding: 20px 20px;
-    justify-content: inherit;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    margin-right: 200px;
 }
 .story {
     position: absolute;
@@ -163,11 +172,19 @@ p2 {
     position: absolute;
     top: 1200px;
     display: flex;
-    width: 1200px;
-    margin: auto 200px;
+    width: 100%;
+    /*margin: auto 200px;*/
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+.icon3 {
+    position: relative;
+    right: 200px;
+}
+.icon1 {
+    position: relative;
+    left: 200px;
 }
 img {
     display: flex;
@@ -175,16 +192,19 @@ img {
 }
 .wrapper {
     position: relative;
-    top: 600px;
+    top: 400px;
 }
 
 .eventstitle {
     text-align: center;
 }
+.eventstitle p3 {
+    color: #000;
+}
 .buttonevents {
     display: inline;
     position: absolute;
-    right: 100px;
+    right: 200px;
     border: 1px solid white;
     border-bottom-color: blue;
     /*text-decoration-line: underline;
@@ -192,23 +212,367 @@ img {
     padding: 5px;
 }
 .block {
+    width: 100%;
     display: flex;
-    margin: 50px 200px;
+    margin-right: 50px;
+    margin-top: 50px;
     justify-content: space-between;
+    /*align-content: space-between;*/
 }
 .block1 {
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
+    text-align: center;
+    margin-left: 200px;
+    /*border: #8fb0d0 1px solid;*/
 }
-/*.block2 {
-    border: 1px solid white;
+.buttonwrapper {
+    position: relative;
+    top: -146px;
+    display: inline-flex;
+    height: 30px;
+}
+.buttonwrapper1 {
+    border: red 1px solid;
+    height: 50px;
+    width: 179px;
+    background: red;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+}
+.buttonwrapper2 {
+    border: gainsboro 1px solid;
+    height: 50px;
+    width: 178px;
+    text-align: center;
+    padding-top: 25px;
+}
+.block img {
+    width: 360px;
+    height: 260px;
+}
+.block2 {
+    border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
+    text-align: center;
+    margin-inside: 50px;
 }
 .block3 {
-    border: 1px solid white;
+    border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
+    text-align: center;
+    margin-right: 200px;
 }
+.block p4 {
+    justify-content: center;
+}
+.blocktext {
+    height: 270px;
+    margin-top: 60px;
+    text-align: inherit;
+}
+.videos {
+    /*width: 1200px;*/
+    position: relative;
+    top: 200px;
+    padding-left: 200px;
+    /*padding-right: 400px;*/
+}
+.videotitle {
+    text-align: center;
+    /*text-align: ;*/
+    /*display: block;*/
+    /*justify-content: center;*/
+}
+.video {
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-right: 200px;
+    /*mso-padding-between: 40px;*/
+}
+video {
+    margin: 20px;
+    width: 520px;
+    height: 390px;
+}
+/*p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}*/
+p {
+    display: flex;
+    margin: 20px;
+    bottom: 1px;
+}
+.newstitle {
+    text-align: center;
+}
+.buttonnews {
+    display: inline;
+    position: absolute;
+    right: 200px;
+    border: 1px solid white;
+    border-bottom-color: blue;
+    /*text-decoration-line: underline;
+    text-decoration-color: #0054a4;*/
+    padding: 5px;
+}
+.blocknews {
+    width: 100%;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 50px;
+    justify-content: space-between;
+    /*align-content: space-between;*/
+}
+.blocknews1 {
+    border: 1px solid gainsboro;
+    height: 580px;
+    width: 360px;
+    text-align: start;
+    margin-left: 200px;
+    /*border: #8fb0d0 1px solid;*/
+}
+.blocknews2 {
+    border: 1px solid gainsboro;
+    height: 580px;
+    width: 360px;
+    text-align: start;
+    margin-inside: 50px;
+}
+.blocknews3 {
+    border: 1px solid gainsboro;
+    height: 580px;
+    width: 360px;
+    text-align: start;
+    margin-right: 200px;
+}
+.blocknews img {
+    width: 360px;
+    height: 260px;
+}
+.buttonrecent1 {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background: green;
+    height: 35px;
+    width: 120px;
+    border: #8fb0d0 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+}
+.buttonrecent2 {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background: red;
+    height: 35px;
+    width: 120px;
+    border: #8fb0d0 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+}
+.buttonrecent3 {
+    position: relative;
+    top: 30px;
+    left: 50px;
+    background: blue;
+    height: 35px;
+    width: 120px;
+    border: #8fb0d0 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 15px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: white;
+}
+.blocktext {
+    padding: 30px;
+    border-bottom-color: gainsboro;
 
+}
+.volunteer {
+    position: relative;
+    top: 900px;
+    background: url("../img/volunteer.png");
+    height: 900px;
+    width: 100%;
+}
+.volunteerbox {
+    height: 400px;
+    width: 420px;
+    background: white;
+    position: absolute;
+    left: 580px;
+    top: 400px;
+    justify-content: center;
+    /*padding: 50px;*/
+}
+.volunteerbox h2 {
+    text-align: center;
+    /*margin-top: 10px;*/
+    /*margin-left: 100px;*/
+    color: black;
+
+}
+.volunteerbox p2 {
+    margin-top: 10px;
+    color: gainsboro;
+}
+.volunteerbutton {
+    width: 180px;
+    height: 20px;
+    border: #8fb0d0 1px solid;
+    border-radius: 40px;
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    /*margin-bottom: 100px;*/
+    /*padding-left: 20px;*/
+}
+.volunteerwrapper {
+    justify-content: center;
+    padding: 80px;
+}
+.logobox {
+    position: relative;
+    top: 1000px;
+    width: 100%;
+    /*margin-left: 200px;*/
+    /*margin-right: 200px;*/
+    /*padding: 20px;*/
+}
+.logobox ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 200px;
+    margin-left: 200px;
+}
+/*.logobox li {*/
+    /*height: 100px;*/
+    /*width: 300px;*/
+    /*background: gainsboro;*/
+.footer {
+    background: url("../img/fon.png");
+    position: relative;
+    top: 1100px;
+    width: 100%;
+    height: 450px;
+    padding: 0px;
+}
+.footerwrapper {
+    background: rgba(0,0,255,0.3);
+    width: 100%;
+    height: 450px;
+    position: relative;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.footerlogo {
+    height: 250px;
+    width: 400px;
+    display: block;
+    position: relative;
+    top: 100px;
+    left: 140px;
+    /*padding-top: 5px;*/
+    /*padding-left: 10px;*/
+}
+.footerwrapperbox {
+    /*position: relative;*/
+    /*top: 100;*/
+    /*right: 200px;*/
+    margin-right: 200px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+.footersl {
+    width: 140px;
+}
+.footercu {
+    width: 210px;
+}
+.footerbutton {
+    width: 220px;
+    /*height: 45px;*/
+    background: #f15b4f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.end {
+    position: relative;
+    top: 1100px;
+    width: 999px;
+    background: #003b7b;
+    justify-content: center;
+    padding-top: 2px;
+    padding-left: 500px;
+    padding-bottom: 3px;
+}
+.footersocial {
+    padding-top: 10px;
+    padding-left: 50px;
+    height: 80px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+    display: inline-block;
+    justify-content: space-between;
+
+}
+.footersocial ul li {
+    margin: 20px;
+}
+.buttonicon {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background: white;
+}
+.buttonicon i {
+    zoom: 200%;
+    /*padding-left: 7px;*/
+    /*padding-top: 9px;*/
+}
+.buttonicontext h3,p3 {
+    color: white;
+}
+.buttonblock1 i {
+    color: #6fbd2a;
+    padding-left: 8px;
+    padding-top: 9px;
+}
+.buttonblock2 i {
+    color: #f15b4f;
+    padding-left: 12px;
+    padding-top: 9px;
+}
+.buttonblock3 i {
+    color: #0054a4;
+    padding-left: 9px;
+    padding-top: 9px;
+}
