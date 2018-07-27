@@ -118,9 +118,11 @@ a {
 }
 h1,h4 {
     color: #779ac5;
+    font-family: "Comic Sans MS", sans-serif;
 }
 h2 {
     color: black;
+    font-family: "Comic Sans MS", sans-serif;
 }
 p,p4 {
     color: #6b6f76;
@@ -227,6 +229,16 @@ img {
     margin-left: 200px;
     /*border: #8fb0d0 1px solid;*/
 }
+/*.circlelogo {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background: url("../img/event-logo.png") blue;
+    zoom: 0.5;
+    position: relative;
+    left: 25px;
+    top: -30px;
+}*/
 .buttonwrapper {
     position: relative;
     top: -146px;
@@ -560,19 +572,20 @@ p {
 }
 .buttonicontext h3,p3 {
     color: white;
+    font-family: "Comic Sans MS", sans-serif;
 }
 .buttonblock1 i {
     color: #6fbd2a;
-    padding-left: 8px;
-    padding-top: 9px;
+    padding-left: 7px;
+    padding-top: 10px;
 }
 .buttonblock2 i {
     color: #f15b4f;
-    padding-left: 12px;
+    padding-left: 10px;
     padding-top: 9px;
 }
 .buttonblock3 i {
     color: #0054a4;
-    padding-left: 9px;
+    padding-left: 7px;
     padding-top: 9px;
 }
