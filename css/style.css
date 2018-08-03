@@ -3,25 +3,28 @@
     margin: 0px;
     padding: 0px;
     color: black;
-    /*outline: 1px solid red;*/
+    outline: 1px solid red;
 }
-.socialbackground {
-    background: #0054a4;
-    height: 30px;
-    /*width: 100%;*/
-}
-.social {
-    margin-right: 200px;
-    height: 30px;
+.wrapper {
     width: 100%;
-    /*max-width: 1200px;*/
+    max-width: 1250px;
+    padding: 15px;
+    margin: 0 auto;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.socialBackground {
+    background: #0054a4;
+}
+.socialBackground .wrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
-.social ul {
-    margin-right: 200px;
-}
+
 ul li {
     list-style: none;
     display: inline-block;
@@ -36,14 +39,26 @@ i {
 a {
     text-decoration: none;
 }
-.menu ul li {
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+}
+.header .wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu a {
+    padding: 5px 10px;
     border: white 1px solid;
-    padding: 5px;
+    /*padding: 5px;*/
     border-radius: 15px;
 }
-.menu ul li :hover {
+.menu a:hover {
     background: #eeeeee;
-    padding: 5px;
+    /*padding: 5px 10px;*/
     border-radius: 15px;
     border: 1px #8fb0d0 solid;
 }
@@ -57,29 +72,25 @@ a {
 .button:hover {
     box-shadow: 2px 2px 7px rgba(0,0,0,0.5);
 }
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: auto 200px;
-}
-.wrapperheader {
-    width: 675px;
-}
 .logo {
-    position: relative;
-    top: -30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
 }
 .content {
     height: 830px;
     background: url("../img/background.png");
-    width: 100%;
+    background-size: cover;
+    padding: 145px 0 320px;
 }
-.contentbody {
-    margin-left: 200px;
+.wrapperContent {
+    width: 40%;
+    max-width: 380px;
+    min-width: 300px;
+    font-size: 100%;
 }
-.buttoncontent {
-    display: flex;
+.buttonContent {
+    text-align: center;
     margin-top: 30px;
     /*justify-items: inherit;*/
 }
@@ -94,7 +105,7 @@ a {
     color: white;
 }
 .button2 {
-    /*margin-left: 18px;*/
+    margin-left: 18px;
     padding: 5px 20px;
     border: white 1px solid;
     border-radius: 20px;
@@ -102,132 +113,113 @@ a {
     display: inline-block;
     color: white;
 }
-.wrapermenu {
-    position: relative;
-    top: -100px;
-    width: 100%;
-}
-.buttonmenu {
+/*.wrapperMenu {*/
+    /*position: relative;*/
+    /*top: -100px;*/
+    /*width: 100%;*/
+/*}*/
+.buttonMenu .wrapper {
     display: flex;
-    /*width: 100%;
-    /*position: relative;
-    /*margin: 200px;
-    top: -100px;*/
     justify-content: space-between;
     align-items: center;
+    margin-top: -85px;
 }
 h1,h4 {
     color: #779ac5;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: 'Lobster', cursive;
 }
 h2 {
     color: black;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: 'Lobster', cursive;
 }
-p,p4 {
+p {
     color: #6b6f76;
 }
 p2 {
     color: black;
 }
-.buttonblock1 {
+.buttonBlock {
     height: 100px;
-    width: 280px;
+    width: 25%;
     border: 1px solid white;
     border-radius: 30px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+.buttonBlock1 {
     background: #6fbd2a;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    margin-left: 200px;
 }
-.buttonblock2 {
-    height: 100px;
-    width: 280px;
-    border: 1px solid white;
-    border-radius: 30px;
+.buttonBlock2 {
     background: #f15b4f;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
 }
-.buttonblock3 {
-    height: 100px;
-    width: 280px;
-    border: 1px solid white;
-    border-radius: 30px;
+.buttonBlock3 {
     background: #0054a4;
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    margin-right: 200px;
 }
 .story {
-    position: absolute;
-    top: 1050px;
-    left: 400px;
-    right: 400px;
     display: inline-block ;
-    text-align: center;
 }
-.icon {
-    position: absolute;
-    top: 1200px;
+.storyText {
+    width: 40%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 31%;
+    /*display: block;*/
+}
+.storyText2 {
+    margin-top: 20px;
+}
+.story .wrapper {
+    justify-content: center;
+    text-align: center;
+    margin: 70px 100px;
+    /*padding: 40px;*/
+}
+.story .icon {
     display: flex;
-    width: 100%;
-    /*margin: auto 200px;*/
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-}
-.icon3 {
-    position: relative;
-    right: 200px;
-}
-.icon1 {
-    position: relative;
-    left: 200px;
+    margin-top: 40px;
 }
 img {
     display: flex;
     float: bottom;
 }
-.wrapper {
-    position: relative;
-    top: 400px;
-}
-
-.eventstitle {
+.eventsTitle {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
-.eventstitle p3 {
-    color: #000;
-}
-.buttonevents {
+.buttonEvents {
     display: inline;
-    position: absolute;
-    right: 200px;
+    height: 20px;
+    width: 140px;
+    margin-top: 70px;
+    padding-top: 10px;
+    /*position: absolute;*/
+    /*right: 200px;*/
     border: 1px solid white;
     border-bottom-color: blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     /*text-decoration-line: underline;
     text-decoration-color: #0054a4;*/
-    padding: 5px;
+    /*padding: 5px;*/
 }
 .block {
-    width: 100%;
+    /*width: 100%;*/
     display: flex;
     margin-right: 50px;
     margin-top: 50px;
     justify-content: space-between;
-    /*align-content: space-between;*/
 }
 .block1 {
     border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
     text-align: center;
-    margin-left: 200px;
-    /*border: #8fb0d0 1px solid;*/
 }
 /*.circlelogo {
     height: 65px;
@@ -239,27 +231,26 @@ img {
     left: 25px;
     top: -30px;
 }*/
-.buttonwrapper {
-    position: relative;
-    top: -146px;
+.buttonWrapper {
     display: inline-flex;
     height: 30px;
+    /*padding-bottom: 150px;*/
 }
-.buttonwrapper1 {
+.buttonWrapper1 {
     border: red 1px solid;
-    height: 50px;
+    height: 100%;
     width: 179px;
     background: red;
     color: white;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
 }
-.buttonwrapper2 {
+.buttonWrapper2 {
     border: gainsboro 1px solid;
-    height: 50px;
+    height: 100%;
     width: 178px;
     text-align: center;
-    padding-top: 25px;
+    padding-top: 15px;
 }
 .block img {
     width: 360px;
@@ -270,46 +261,82 @@ img {
     height: 580px;
     width: 360px;
     text-align: center;
-    margin-inside: 50px;
+    /*margin-inside: 50px;*/
 }
 .block3 {
     border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
     text-align: center;
-    margin-right: 200px;
+    /*margin-right: 200px;*/
 }
 .block p4 {
     justify-content: center;
 }
-.blocktext {
-    height: 270px;
-    margin-top: 60px;
-    text-align: inherit;
+.blockText {
+    height: 180px;
+    margin-top: 0px;
+    /*text-align: inherit;*/
 }
-.videos {
+.videos .wrapper {
+    justify-content: space-between;
+    text-align: center;
+    margin: 70px 100px;
     /*width: 1200px;*/
-    position: relative;
-    top: 200px;
-    padding-left: 200px;
+    /*position: relative;*/
+    /*top: 200px;*/
+    /*padding-left: 200px;*/
     /*padding-right: 400px;*/
 }
-.videotitle {
+.videosTitle {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    /*text-align: ;*/
+}
+.videosText {
+    width: 40%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 31%;
     /*display: block;*/
-    /*justify-content: center;*/
+}
+.videos .buttonEvents {
+    display: inline;
+    height: 20px;
+    width: 150px;
+    margin-top: 30px;
+    padding-top: 10px;
+    border: 1px solid white;
+    border-bottom-color: blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .video {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    align-content: space-between;
-    margin-right: 200px;
+    align-content: center;
+    /*margin-right: 200px;*/
     /*mso-padding-between: 40px;*/
 }
+/*.video .wrapper {*/
+    /*justify-content: space-between;*/
+    /*text-align: center;*/
+    /*!*margin: 70px 100px;*!*/
+/*}*/
+.video1 {
+    justify-content: start;
+    width: 560px;
+    height: 390px;
+}
+.video2 {
+    justify-content: end;
+    width: 560px;
+    height: 390px;
+}
 video {
-    margin: 20px;
-    width: 520px;
+    width: 560px;
     height: 390px;
 }
 /*p {
@@ -324,20 +351,42 @@ p {
     margin: 20px;
     bottom: 1px;
 }
-.newstitle {
+.newsTitle {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
-.buttonnews {
+.newsText {
+    width: 40%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 31%;
+    /*display: block;*/
+}
+.news .buttonEvents {
     display: inline;
-    position: absolute;
-    right: 200px;
+    height: 20px;
+    width: 80px;
+    margin-top: 30px;
+    padding-top: 10px;
     border: 1px solid white;
     border-bottom-color: blue;
-    /*text-decoration-line: underline;
-    text-decoration-color: #0054a4;*/
-    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-.blocknews {
+/*.buttonNews {*/
+    /*display: inline;*/
+    /*position: absolute;*/
+    /*right: 200px;*/
+    /*border: 1px solid white;*/
+    /*border-bottom-color: blue;*/
+    /*!*text-decoration-line: underline;*/
+    /*text-decoration-color: #0054a4;*!*/
+    /*padding: 5px;*/
+/*}*/
+.blockNews {
     width: 100%;
     display: flex;
     margin-right: 50px;
@@ -345,154 +394,139 @@ p {
     justify-content: space-between;
     /*align-content: space-between;*/
 }
-.blocknews1 {
+.blockNews1 {
     border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
     text-align: start;
-    margin-left: 200px;
-    /*border: #8fb0d0 1px solid;*/
+    /*margin-bottom: 30px;*/
 }
-.blocknews2 {
+.blockNews2 {
     border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
     text-align: start;
-    margin-inside: 50px;
+    /*margin-inside: 50px;*/
 }
-.blocknews3 {
+.blockNews3 {
+    /*display: flex;*/
     border: 1px solid gainsboro;
     height: 580px;
     width: 360px;
+    align-content: space-between;
     text-align: start;
-    margin-right: 200px;
+    /*margin-right: 200px;*/
 }
-.blocknews img {
+.blockNews img {
     width: 360px;
     height: 260px;
 }
-.buttonrecent1 {
-    position: relative;
-    top: 30px;
-    left: 50px;
+.buttonRecentGreen {
+    /*position: relative;*/
+    /*top: 30px;*/
+    /*left: 50px;*/
     background: green;
     height: 35px;
     width: 120px;
     border: #8fb0d0 1px solid;
     border-radius: 10px;
     text-align: center;
-    padding-top: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
     color: white;
+    padding: 5px;
+    margin: 30px;
 }
-.buttonrecent2 {
-    position: relative;
-    top: 30px;
-    left: 50px;
+.buttonRecentRed {
     background: red;
     height: 35px;
     width: 120px;
     border: #8fb0d0 1px solid;
     border-radius: 10px;
     text-align: center;
-    padding-top: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 5px;
+    margin: 30px;
     color: white;
 }
-.buttonrecent3 {
-    position: relative;
-    top: 30px;
-    left: 50px;
+.buttonRecentBlue {
     background: blue;
     height: 35px;
     width: 120px;
     border: #8fb0d0 1px solid;
     border-radius: 10px;
     text-align: center;
-    padding-top: 15px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding: 5px;
+    margin: 30px;
     color: white;
 }
-.blocktext {
+.blockNews .wrapper {
+    margin-top: 30px;
+}
+.blockText {
     padding: 30px;
     border-bottom-color: gainsboro;
-
 }
 .volunteer {
-    position: relative;
-    top: 900px;
     background: url("../img/volunteer.png");
     height: 900px;
     width: 100%;
+    margin-top: 60px;
+    /*padding: 250px 400px;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    align-content: center;
 }
-.volunteerbox {
-    height: 400px;
+.volunteerBox {
+    height: 300px;
     width: 420px;
     background: white;
-    position: absolute;
-    left: 580px;
-    top: 400px;
+    align-items: center;
     justify-content: center;
-    /*padding: 50px;*/
-}
-.volunteerbox h2 {
     text-align: center;
-    /*margin-top: 10px;*/
-    /*margin-left: 100px;*/
+    /*padding-top: 50px;*/
+    padding: 50px 40px 0 40px;
+    /*margin-top: 50px;*/
+}
+.volunteer .wrapper {
+    padding: 350px 500px;
+}
+.volunteerBox h2 {
+    text-align: center;
     color: black;
 
 }
-.volunteerbox p2 {
+.volunteerBox p2 {
     margin-top: 10px;
     color: gainsboro;
 }
-.volunteerbutton {
+.volunteerButton {
     width: 180px;
     height: 20px;
     border: #8fb0d0 1px solid;
     border-radius: 40px;
     color: blue;
+    justify-content: center;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-    margin-left: 20px;
-    /*margin-bottom: 100px;*/
-    /*padding-left: 20px;*/
+    margin-left: 100px;
 }
-.volunteerwrapper {
-    justify-content: center;
-    padding: 80px;
-}
-.logobox {
-    position: relative;
-    top: 1000px;
+.logoBox {
     width: 100%;
-    /*margin-left: 200px;*/
-    /*margin-right: 200px;*/
-    /*padding: 20px;*/
+    margin-top: 70px;
 }
-.logobox ul {
+.logoBox ul {
     display: flex;
     justify-content: space-between;
     margin-right: 200px;
     margin-left: 200px;
 }
-/*.logobox li {*/
-    /*height: 100px;*/
-    /*width: 300px;*/
-    /*background: gainsboro;*/
 .footer {
     background: url("../img/fon.png");
-    position: relative;
-    top: 1100px;
+    margin-top: 50px;
     width: 100%;
     height: 450px;
     padding: 0px;
 }
-.footerwrapper {
+.footerWrapper {
     background: rgba(0,0,255,0.3);
     width: 100%;
     height: 450px;
@@ -501,7 +535,7 @@ p {
     display: flex;
     justify-content: space-between;
 }
-.footerlogo {
+.footerLogo {
     height: 250px;
     width: 400px;
     display: block;
@@ -511,7 +545,7 @@ p {
     /*padding-top: 5px;*/
     /*padding-left: 10px;*/
 }
-.footerwrapperbox {
+.footerWrapperBox {
     /*position: relative;*/
     /*top: 100;*/
     /*right: 200px;*/
@@ -521,13 +555,13 @@ p {
     justify-content: space-between;
     padding-right: 50px;
 }
-.footersl {
+.footerSL {
     width: 140px;
 }
-.footercu {
+.footerCU {
     width: 210px;
 }
-.footerbutton {
+.footerButton {
     width: 220px;
     /*height: 45px;*/
     background: #f15b4f;
@@ -536,8 +570,6 @@ p {
     padding: 10px;
 }
 .end {
-    position: relative;
-    top: 1100px;
     width: 999px;
     background: #003b7b;
     justify-content: center;
@@ -545,7 +577,7 @@ p {
     padding-left: 500px;
     padding-bottom: 3px;
 }
-.footersocial {
+.footerSocial {
     padding-top: 10px;
     padding-left: 50px;
     height: 80px;
@@ -556,36 +588,69 @@ p {
     justify-content: space-between;
 
 }
-.footersocial ul li {
+.footerSocial ul li {
     margin: 20px;
 }
-.buttonicon {
+.buttonIcon {
     height: 65px;
     width: 65px;
     border-radius: 50%;
     background: white;
 }
-.buttonicon i {
+.buttonIcon i {
     zoom: 200%;
     /*padding-left: 7px;*/
     /*padding-top: 9px;*/
 }
-.buttonicontext h3,p3 {
+.buttonIconText h3,p3 {
     color: white;
     font-family: "Comic Sans MS", sans-serif;
 }
-.buttonblock1 i {
+.buttonBlock1 i {
     color: #6fbd2a;
     padding-left: 7px;
     padding-top: 10px;
 }
-.buttonblock2 i {
+.buttonBlock2 i {
     color: #f15b4f;
     padding-left: 10px;
     padding-top: 9px;
 }
-.buttonblock3 i {
+.buttonBlock3 i {
     color: #0054a4;
     padding-left: 7px;
     padding-top: 9px;
+}
+@media ( max-width: 700px ) {
+    .buttonMenu .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .buttonBlock {
+        width: 50%;
+    }
+    .icon {
+        display: flex;
+        flex-direction: column;
+    }
+    .events .block {
+        display: flex;
+        flex-direction: column;
+    }
+    .video {
+        display: flex;
+        flex-direction: column;
+    }
+    .blockNews {
+        display: flex;
+        flex-direction: column;
+    }
+    .logoBox ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .footerWrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }
