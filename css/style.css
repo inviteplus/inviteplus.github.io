@@ -186,6 +186,7 @@ img {
     float: bottom;
 }
 .eventsTitle {
+    /*width: 100%;*/
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -281,7 +282,7 @@ img {
     justify-content: space-between;
     text-align: center;
     margin: 70px 100px;
-    width: 100%;
+    /*width: 100%;*/
     /*position: relative;*/
     /*top: 200px;*/
     /*padding-left: 200px;*/
