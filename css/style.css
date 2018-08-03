@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     color: black;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 .wrapper {
     width: 100%;
@@ -81,23 +81,26 @@ a {
     height: 830px;
     background: url("../img/background.png");
     background-size: cover;
-    padding: 145px 0 320px;
+    padding: 55px 120px;
 }
 .wrapperContent {
     width: 40%;
-    max-width: 380px;
-    min-width: 300px;
+    /*max-width: 380px;*/
+    /*min-width: 300px;*/
     font-size: 100%;
+    padding: 0px;
 }
 .buttonContent {
+    display: flex;
+    /*justify-content: space-between;*/
     text-align: center;
     margin-top: 30px;
+    margin-left: 0px;
     /*justify-items: inherit;*/
 }
 .button1 {
-    /*height: 30px;*/
-    /*width: 175px;*/
-    padding: 5px 20px;
+    width: 120px;
+    padding: 10px 20px;
     border: white 1px solid;
     border-radius: 20px;
     background: #f15b4f;
@@ -105,19 +108,15 @@ a {
     color: white;
 }
 .button2 {
+    width: 120px;
     margin-left: 18px;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border: white 1px solid;
     border-radius: 20px;
     background: #0054a4;
     display: inline-block;
     color: white;
 }
-/*.wrapperMenu {*/
-    /*position: relative;*/
-    /*top: -100px;*/
-    /*width: 100%;*/
-/*}*/
 .buttonMenu .wrapper {
     display: flex;
     justify-content: space-between;
@@ -209,7 +208,7 @@ img {
     /*padding: 5px;*/
 }
 .block {
-    /*width: 100%;*/
+    width: 100%;
     display: flex;
     margin-right: 50px;
     margin-top: 50px;
@@ -282,7 +281,7 @@ img {
     justify-content: space-between;
     text-align: center;
     margin: 70px 100px;
-    /*width: 1200px;*/
+    width: 100%;
     /*position: relative;*/
     /*top: 200px;*/
     /*padding-left: 200px;*/
